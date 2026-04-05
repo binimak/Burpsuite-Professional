@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,16 +17,7 @@
       font-size: 24px;
       font-weight: bold;
     }
-input {
-  padding: 10px;
-  width: 80%;
-  border-radius: 5px;
-  border: 1px solid gray;
-}
 
-form {
-  margin-top: 20px;
-}
     .box {
       background: white;
       color: black;
@@ -44,6 +34,17 @@ form {
 
     p {
       font-size: 18px;
+    }
+
+    input {
+      padding: 10px;
+      width: 80%;
+      border-radius: 5px;
+      border: 1px solid gray;
+    }
+
+    form {
+      margin-top: 20px;
     }
 
     button {
@@ -68,19 +69,17 @@ form {
   <div class="box">
     <h1>እንኳን ደህና መጡ</h1>
     <p>ይህ የእኔ የተሻለ ዌብሳይት ነው</p>
-
     <button onclick="alert('ሰላም!')">Click Me</button>
   </div>
-<h2>Register</h2>
 
-<form>
-  <input type="text" placeholder="Name" required><br><br>
-  
-  <input type="email" placeholder="Email" required><br><br>
-  
-  <input type="password" placeholder="Password" required><br><br>
-  
-  <button type="submit">Register</button>
-</form>
+  <h2>Register</h2>
+
+  <form action="http://127.0.0.1:5000/register" method="POST">
+    <input name="name" placeholder="Name" required><br><br>
+    <input name="email" type="email" placeholder="Email" required><br><br>
+    <input name="password" type="password" placeholder="Password" required><br><br>
+    <button type="submit">Register</button>
+  </form>
+
 </body>
 </html>
